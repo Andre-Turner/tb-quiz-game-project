@@ -7,19 +7,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz Game</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="index.js"></script>
   </head>
 
 
   <body>
-      <div class="welcome center">
+    <div id="main center">
+      <div id="greeting" class="welcome">
          <p>Test your front end developer skills by answering the following questions.</p>
-         <a href="question.html">
-         <button id="btnBegin" onclick="doSomething();">Begin</button>
-      </a>
+         
+         <button id="btnBegin" onclick="doGame();">Begin</button>
       </div>  
       
+      <div id="score-board" class="hide">
+        <div id="timerContainer">Time Remaining:<span id="timer" style ="text-align:left"></span></div>
+        <div id="scoreContainer">Score:<span id="score" span style="text-align:right">Score:</span></div>
+    </div>
+
+    <div id="questions">
+      <input id="quest0_answer1" type="radio" name="quest0" class="answer"></input>
+      <label for="quest0_answer1">A Possible Answer</label>
+        
+
+      </div>
+    </div>
    
 
   </body>
+
+  
 </html>

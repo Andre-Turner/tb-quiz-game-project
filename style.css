@@ -1,10 +1,12 @@
-.welcome {
+.welcome, .question-container {
     border: 1px solid black;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    text-align: center;
-    box-sizing: content-box;
     height: 250px;
     width: 50%;
+    margin: auto;
+    text-align: center;
+    box-sizing: content-box;
+    position: absolute;
     
 
     
@@ -14,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+   
 }
 
 p {
@@ -23,4 +25,22 @@ p {
 
 #btnBegin {
     padding: 20px 30px;
+}
+
+.hide {
+    display: none;
+}
+
+.question {
+    color: black;
+}
+
+.answer {
+    color: blue;
+}
+
+div.answer:hover,
+div.answer:active {
+    color: white;
+    background-color: blue;
 }
