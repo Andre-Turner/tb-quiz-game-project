@@ -99,7 +99,6 @@ function prepareQuestionAndAnswers(questionIndex) {
     let questionSection = document.getElementId('question');
     let newQuestion = document.createElement('div');
     newQuestion.id =arrayofQuestions[questionIndex].id;
-    newQuestion
     newQuestion.classList.add('question');
 
     let qSpan = document.createElement('span');
@@ -134,13 +133,11 @@ function prepareQuestionAndAnswers(questionIndex) {
     }
 
     if(arrayofQuestions[questionIndex].answer2) {
-        
-
+        let answer = document.createElement('div');
         answer.innerText = arrayofQuestions[questionIndex].answer2;
         answer.classList.add('answer');
-        //answer.id = "" + arrayofQuestions[questionIndex].id + _answer2 ;//
         answer.id = '${arrayofQuestions[questionIndex].id} _answer2';
-        questionSection.appendChild(answer);
+        newQuestion.appendChild(answer);
 
         console.log('prepareQuestionAndAnswers newQuestion', newQuestion);
     }
@@ -150,8 +147,9 @@ function prepareQuestionAndAnswers(questionIndex) {
 
 
 
-    questionSection.appendChild()(newQuestion);
-    console.log('prepareQuestionAndAnswers newQuestion')
+    questionSection.appendChild(newQuestion);
+
+    console.log('prepareQuestionAndAnswers newQuestion', newQuestion);
 }
 
 
